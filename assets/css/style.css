@@ -1,0 +1,404 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#accueil{
+    height: 100vh;
+    background-image: url("../img/EV_Trainer.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 145px;
+}
+
+audio {
+  display: none;
+}
+#iconSound {
+position: absolute; 
+bottom: 20px; 
+right: 20px; 
+cursor: pointer;
+width: 80px;
+margin-left: 40%;
+}
+#logo{
+    width: 300px;
+}
+#logo1{
+  width: 300px;
+}
+#logo2{
+  width: 300px;
+}
+#logo3{
+  width: 300px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+#titlerules{
+    margin-top: 2em; 
+    color: #FFCC03;
+
+}
+#arrowgame1{
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+#btngame{
+    padding: 10px 20px;
+    border-radius: 39px;
+    border: 5px #3C59A5 solid;
+    background-color: #FFCC03;
+    font-size: 2em;
+    color: #3C59A5;
+}
+#dflexdiv{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+#firstborderid{
+    background-color: white;
+    border: black 5px solid;
+    border-radius: 20px ;
+    color: black;
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    height: 200px;
+}
+#secondborderid{
+    background-color: white;
+    border: black 5px solid;
+    border-radius: 12px ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 1.5em;
+    }
+
+#rules{
+    height: 100vh;
+    background-image: url("../img/EV_Trainer.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#dflexdivrules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+    border: black 5px solid;
+    border-radius: 12px ;
+    color: black;
+    height: 150px;
+}
+
+#rulesdiv{
+    
+    width: 60%;
+    font-size: 1.5em;
+    padding: 0 32px;
+}
+#rulesdiv p{
+    text-align: center;
+}
+
+#rulesdiv2{
+    background-color: white;
+    border: black 5px solid;
+    border-radius: 6px ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    font-size: 1.2em;
+}
+#imgrules{
+    display: flex;
+    justify-content: space-between;
+}
+.imgrules{
+    width: 50px;
+    margin: 15px;
+}
+#rulestext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rulestext p{
+    text-align: center;
+}
+#titlerules{
+    font-size: 55px;
+    margin-bottom: 185px ;
+}
+.arrow-down{
+    font-size: 6em;
+    color: #FFCC03;
+    -webkit-text-stroke: 4px #3C59A5; 
+}
+/*PAGE 3*/
+
+#carouselanais{
+    height: 100vh;
+    background-image: url("../img/EV_Trainer2.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+/*DEBUT CARROUSSEL*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  border-top: 5px solid #fff;
+  background: #e9e9e9;
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+.slider{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  margin:20px auto 0 auto;
+}
+
+.slider ul{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  height:200px;
+  display:inline-block;
+  list-style:none;
+  background:rgba(68, 85, 136, 0);
+}
+
+
+.slider ul li{
+  position:relative;
+  float:left;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  width:900px;
+  height:400px;
+  background:rgba(255, 255, 255, 0);
+  text-align:center;
+  line-height:400px;
+  color:#333;
+}
+
+
+.control{
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 1% 2%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a00;
+  color: #3C59A5;
+  background-color: #FFCC03;
+  border: 4px solid #3C59A5;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev{
+  left:0px;
+}
+
+.next{
+  right:0px;
+}
+
+.c.c{
+  
+  color:#fff;
+}
+
+.r.r{
+  
+  color:#fff;
+}
+
+.g.g{
+  
+  color:#fff;
+}
+
+.b.b{
+  
+  color:#fff;
+}
+
+.imgGame{
+    width: 200px;
+}
+
+#h1carousel{
+  /* text-align: center; */
+ font-size: 1em;
+ /* padding: 20px; */
+}
+
+/*PAGE jouer au jeu */
+
+
+#btngametwo{
+  padding: 20px 100px;
+  border-radius: 39px;
+  border: 5px #3C59A5 solid;
+  background-color: #FFCC03;
+  font-size: 8em;
+  color: #3C59A5;
+  position: absolute;
+  top: 40%;
+}
+
+/*(page)Fonction du jeu */
+
+#game {
+  height: 100vh;
+  background-image: url("../img/EV_Trainer2.png") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+#gameimg {
+  display: flex;
+  flex-direction: column;
+  z-index: -10;
+}
+
+#thegame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pokedex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px black solid;
+  width: 50%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+#pokeball{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+}
+#sachatte{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  height: 500px;
+}
+
+#decision{
+  /* display: none; */
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: white;
+  border: black 2px solid;
+  position: absolute;
+  bottom: 450px;
+  right: 170px;
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+#h2pokedex{
+  font-size: 2em;
+}
+
+#pokedex p{
+  font-size: 1.2em;
+}
+#sachatte2{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  height: 500px;
+}
+#decision2{
+  width: 550px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  border: black 2px solid;
+  position: absolute;
+  bottom: 500px;
+  right: 170px;
+  font-size: 2em;
+  padding: 10px;
+}
+#accueil audio{
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
